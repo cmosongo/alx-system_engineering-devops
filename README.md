@@ -1,4 +1,3 @@
-<p>Sure! Here's a sample README file that covers the areas you mentioned:</p>
 <h1>Shell Basics README</h1>
 <p>This README provides a brief overview of shell basics, including navigation, file manipulation, working with
     commands, and useful keyboard shortcuts.</p>
