@@ -1,0 +1,74 @@
+#!/bin/bash
+
+# Task 0: Switch user to betty
+echo '#!/bin/bash' > 0-iam_betty
+echo 'su betty' >> 0-iam_betty
+chmod 700 0-iam_betty
+
+# Task 1: Print effective username
+echo '#!/bin/bash' > 1-who_am_i
+echo 'id -un' >> 1-who_am_i
+chmod 700 1-who_am_i
+
+# Task 2: Print user's groups
+echo '#!/bin/bash' > 2-groups
+echo 'groups' >> 2-groups
+chmod 700 2-groups
+
+# Task 3: Change owner of file hello to betty
+echo '#!/bin/bash' > 3-new_owner
+echo 'chown betty hello' >> 3-new_owner
+chmod 700 3-new_owner
+
+# Task 4: Create an empty file called hello
+echo '#!/bin/bash' > 4-empty
+echo 'touch hello' >> 4-empty
+chmod 700 4-empty
+
+# Task 5: Add execute permission to owner of file hello
+echo '#!/bin/bash' > 5-execute
+echo 'chmod +x hello' >> 5-execute
+chmod 700 5-execute
+
+# Task 6: Add execute permission to owner and group owner, and read permission to others for file hello
+echo '#!/bin/bash' > 6-multiple_permissions
+echo 'chmod 700,g+x,o+r hello' >> 6-multiple_permissions
+chmod 700 6-multiple_permissions
+
+# Task 7: Add execute permission to owner, group owner, and others for file hello
+echo '#!/bin/bash' > 7-everybody
+echo 'chmod a+x hello' >> 7-everybody
+chmod 700 7-everybody
+
+# Task 8: Set permissions for file hello - Owner: no permission, Group: no permission, Others: all permissions
+echo '#!/bin/bash' > 8-James_Bond
+echo 'chmod u-r,g-r,o+rwx hello' >> 8-James_Bond
+chmod 700 8-James_Bond
+
+# Task 9: Set mode of file hello to 751
+echo '#!/bin/bash' > 9-John_Doe
+echo 'chmod 751 hello' >> 9-John_Doe
+chmod 700 9-John_Doe
+
+# Task 10: Set mode of file hello same as olleh
+echo '#!/bin/bash' > 10-mirror_permissions
+echo 'chmod --reference=olleh hello' >> 10-mirror_permissions
+chmod 700 10-mirror_permissions
+
+# Task 11: Add execute permission to subdirectories for owner, group owner, and others
+echo '#!/bin/bash' > 11-directories_permissions
+echo 'find . -type d -exec chmod ugo+x {} +' >> 11-directories_permissions
+chmod 700 11-directories_permissions
+
+# Task 12: Create directory my_dir with permissions 751
+echo '#!/bin/bash' > 12-directory_permissions
+echo 'mkdir -m 751 my_dir' >> 12-directory_permissions
+chmod 700 12-directory_permissions
+
+# Task 13: Change group owner of file hello to school
+echo '#!/bin/bash' > 13-change_group
+echo 'chgrp school hello' >> 13-change_group
+chmod 700 13-change_group
+
+
+
