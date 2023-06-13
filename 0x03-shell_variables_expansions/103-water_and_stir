@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((water + stir))
+echo base -w $BESTCHOL <<< $((water + stir))
