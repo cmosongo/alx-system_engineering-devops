@@ -25,6 +25,10 @@ The shell is a command-line interface that allows users to interact with the ope
 
 - [0x02-shell_redirections](0x02-shell_redirections/REAME.md)
 
+## 0x03-shell_variables_expansions
+
+- [0x03-shell_variables_expansions](0x03-shell_variables_expansions/README.md)
+
 ## Contributing
 
 Contributions are welcome! If you have any improvements, corrections, or new project ideas, please feel free to submit a pull request.
