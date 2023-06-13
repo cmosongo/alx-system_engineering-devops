@@ -1,2 +1,2 @@
 #!/bin/bash
-echo '$(IFS=":"; set -- $PATH; echo $((0 - 1)))'
+$(IFS=":"; set -- $PATH; echo $((0 - 1)))
